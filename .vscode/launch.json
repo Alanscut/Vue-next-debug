@@ -5,24 +5,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Jest",
-      "type": "node",
+      "name": "Launch Chrome",
       "request": "launch",
-      "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "stopOnEntry": false,
-      "args": ["${fileBasename}", "--runInBand", "--detectOpenHandles"],
-      "cwd": "${workspaceFolder}",
-      "preLaunchTask": null,
-      "runtimeExecutable": null,
-      "runtimeArgs": ["--nolazy"],
-      "env": {
-        "NODE_ENV": "development"
-      },
-      "console": "integratedTerminal",
-      "sourceMaps": true,
-      "windows": {
-        "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-      }
+      "type": "pwa-chrome",
+      "url": "${workspaceFolder}/demo/issue2657.html",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
